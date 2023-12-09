@@ -1,0 +1,129 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  color: black;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 14px 16px;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex; /* Make the menu items flex items */
+  justify-content: center; /* Center the items horizontally */
+}
+
+.menu li {
+  margin: 0 10px; /* Adjust the spacing between menu items */
+}
+
+.menu a {
+  display: flex;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Style for dropdown menu items */
+.menu .dropdown {
+  display: inline-block;
+}
+
+.menu .dropdown-content {
+  display: none;
+  position: absolute;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.menu .dropdown:hover .dropdown-content {
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .menu {
+    flex-direction: column; /* Change to a column layout for mobile */
+    align-items: flex-start; /* Align items to the left for mobile */
+    display: none; /* Hide the menu by default on mobile */
+  }
+
+  .menu.show {
+    display: flex; /* Show the menu when the .show class is applied */
+  }
+
+  .menu-toggle {
+    display: block; /* Show the menu toggle button on mobile */
+  }
+}
+
+header {
+  color: black;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.cart-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Add this to your styles.css file or in a <style> tag in the <head> of your HTML */
+
+/* Style for the dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px; /* Adjust this as needed */
+  padding-top: 6px;
+
+}
+
+/* Style for the select element */
+.shop-collection-content {
+  padding: 8px;
+  /* border: 1px solid #ccc; */
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+}
+
+/* Style for the dropdown arrow */
+.shop-collection-content::after {
+  content: '\25BC'; /* Unicode character for downward-pointing triangle */
+  font-size: 16px;
+  /* color: #555; */
+  position: relative;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+/* Adjust the position of the dropdown options */
+.shop-collection-content option {
+  padding: 8px;
+}
