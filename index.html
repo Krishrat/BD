@@ -7,69 +7,76 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css">
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
     <title>Allure Attire</title>
   </head>
   <body>
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <title>Your Website Title</title>
-    </head>
-    <body>
-    
-        <header class="container-md">
-            <div class="row align-items-center justify-content-evenly">
-                <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-start pt-2">
-                    <i class="fa fa-search" alt="Search icon" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"></i>
-                    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
-                        <div class="offcanvas-header d-flex justify-content-center">
-                            <input type="text" placeholder="Search" id="searchInput" aria-label="Search" aria-describedby="searchIcon" />
-                            <button class="btn btn-outline-secondary" type="button" id="searchIcon">
-                                <i class="fa fa-search"></i>
-                            </button>
-                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <!-- Offcanvas body content goes here -->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center pt-2">
-                    <img id="logo" src="images/AA2.png" alt="logo.png" />
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-end pt-2">
-                    <div class="cart-icon mr-6">🛒</div>
-                </div>
+    <header class="container-md">
+      <div class="row align-items-center justify-content-evenly">
+        <div
+          class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-start pt-2"
+        >
+          <i
+            class="fa fa-search"
+            alt="Search icon"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasTop"
+            aria-controls="offcanvasTop"
+          ></i>
+          <div
+            class="offcanvas offcanvas-top"
+            tabindex="-1"
+            id="offcanvasTop"
+            aria-labelledby="offcanvasTopLabel"
+          >
+            <div class="offcanvas-header d-flex justify-content-center">
+              <input
+                type="text"
+                placeholder="Search"
+                id="searchInput"
+                aria-label="Search"
+                aria-describedby="searchIcon"
+              />
+              <button
+                class="btn btn-outline-secondary"
+                type="button"
+                id="searchIcon"
+              >
+                <i class="fa fa-search"></i>
+              </button>
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
             </div>
-        </header>
-    
-        <!-- Your content goes here -->
-    
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    </body>
-    </html>
-    
-  
+            <div class="offcanvas-body">
+              <!-- Offcanvas body content goes here -->
+            </div>
+          </div>
+        </div>
+        <!-- <div
+          class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center pt-2"
+        >
+          <img id="logo" src="images/AA2.png" alt="logo.png" />
+        </div> -->
+        <div
+          class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-end pt-2"
+        >
+          <div class="cart-icon mr-6">🛒</div>
+        </div>
+      </div>
+    </header>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <!-- Navbar Toggler for mobile view -->
         <button
           class="navbar-toggler"
           type="button"
@@ -81,10 +88,8 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-
-        <!-- Navbar Links -->
         <div
-          class="collapse d-flex justify-content-center navbar-collapse text-center"
+          class="collapse navbar-collapse d-flex justify-content-center"
           id="navbarNav"
         >
           <ul class="navbar-nav">
@@ -97,11 +102,6 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Catalogue</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
-            </li>
-
-            <!-- Shop By Occasion Dropdown -->
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -123,13 +123,25 @@
                 <li><a class="dropdown-item" href="#">T-shirts</a></li>
                 <li><a class="dropdown-item" href="#">Joggers</a></li>
                 <li><a class="dropdown-item" href="#">Crop-tops</a></li>
-                <!-- Add more dropdown items as needed -->
               </ul>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+
+    <!-- Your content goes here -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI/t1f7f4e1tC1je3kmO7A5ePb8+ooQk6ZlE3lXc="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
     <div class="container-fluid">
       <div class="row g-2">
         <div class="col-lg-4 col-md-6 col-sm-12">
@@ -161,32 +173,31 @@
     </div>
     <footer>
       <ul class="footer-links">
-          <li><a href="#">Quick links</a></li>
-          <li><a href="#">Search</a></li>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Featured Collection</a></li>
-          <li><a href="#">Size guide</a></li>
-          <li><a href="#">Contact us</a></li>
-          <li><a href="#">Subscribe</a></li>
+        <li><a href="#">Quick links</a></li>
+        <li><a href="#">Search</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Featured Collection</a></li>
+        <li><a href="#">Size guide</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Subscribe</a></li>
       </ul>
 
       <div class="social-media">
-          <a href="#" target="_blank">Email</a>
-          <a href="#" target="_blank">Facebook</a>
-          <a href="#" target="_blank">Instagram</a>
-          <a href="#" target="_blank">YouTube</a>
+        <a href="#" target="_blank">Email</a>
+        <a href="#" target="_blank">Facebook</a>
+        <a href="#" target="_blank">Instagram</a>
+        <a href="#" target="_blank">YouTube</a>
       </div>
 
       <p>Payment methods</p>
       <p>© 2023, Annie attire</p>
 
       <ul class="footer-links">
-          <li><a href="#">Refund policy</a></li>
-          <li><a href="#">Privacy policy</a></li>
-          <li><a href="#">Terms of service</a></li>
-          <li><a href="#">Shipping policy</a></li>
+        <li><a href="#">Refund policy</a></li>
+        <li><a href="#">Privacy policy</a></li>
+        <li><a href="#">Terms of service</a></li>
+        <li><a href="#">Shipping policy</a></li>
       </ul>
-  </footer>
-
+    </footer>
   </body>
 </html>
